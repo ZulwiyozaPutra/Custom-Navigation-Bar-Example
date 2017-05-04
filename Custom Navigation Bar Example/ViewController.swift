@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = backButton
+        
     }
 
     override func didReceiveMemoryWarning() {
